@@ -1,8 +1,10 @@
-import React from 'react'
+'use client'
 
 const Home = () => {
   return (
-    <main>HomePage</main>
+    <>
+    
+    </>
   )
 }
 
