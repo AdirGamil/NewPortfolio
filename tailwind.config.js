@@ -8,11 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightHover: '#fcf4ff',
-        darkHover: '#2a004a',
-        darkTheme: '#11001F',
+        lightHover: '#F6F1FF',
+        darkHover: '#32004a',
+        darkTheme: '#10001F',
       },
     },
   },
   plugins: [],
 }
+
