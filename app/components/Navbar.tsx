@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
 import React from 'react'
+import { navbarLinks } from '@/constants/contacts'
 
 const Navbar = () => {
   return (
@@ -19,25 +20,15 @@ const Navbar = () => {
           </h1>
         </a>
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 shadow-md bg-white bg-opacity-50 rounded-full px-12 py-3">
-          <li>
-            <a href="#top">Home</a>
-          </li>
-          <li>
-            <a href="#about">About me</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#work">My Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact me</a>
-          </li>
+          {navbarLinks.map((link) => (
+            <li key={link.id}>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))}
         </ul>
 
         <div className="flex items-center gap-4">
-          <button className='cursor-pointer'>
+          <button className="cursor-pointer">
             <Image src={assets.moon_icon} alt="menu" className="w-6" />
           </button>
           <a
@@ -48,7 +39,7 @@ const Navbar = () => {
             <Image src={assets.arrow_icon} alt="arrow" className="w-3" />{' '}
           </a>
 
-          <button className='block md:hidden ml-3'>
+          <button className="block md:hidden ml-3">
             <Image src={assets.menu_black} alt="menu" className="w-6" />
           </button>
         </div>

@@ -4,5 +4,6 @@ export const navbarLinks = [
     { id: 3, label: 'Services', href: '#services' },
     { id: 4, label: 'My Work', href: '#work' },
     { id: 5, label: 'Contact me', href: '#contact' },
+    
   ]
   
