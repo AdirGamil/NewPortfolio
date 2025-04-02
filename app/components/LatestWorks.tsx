@@ -34,7 +34,9 @@ const LatestWorks = () => {
             <Image
               src={item.image}
               alt={item.title}
-              className="w-[335px] h-[335px] object-cover"
+              width={335}
+              height={335}
+              className=" object-cover"
             />
             <div className="absolute bg-white w-[270px] rounded-lg border border-black flex items-center justify-center">
               <div>
