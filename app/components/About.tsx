@@ -1,40 +1,49 @@
 import { assets, infoList } from '@/assets/assets'
+import Aws from '@/assets/svgs/Aws'
+import Cloudinary from '@/assets/svgs/Cloudinary'
+import Css3 from '@/assets/svgs/Css3'
+import Docker from '@/assets/svgs/Docker'
+import Figma from '@/assets/svgs/Figma'
+import Firebase from '@/assets/svgs/Firebase'
+import Git from '@/assets/svgs/Git'
+import Github from '@/assets/svgs/Github'
+import Html from '@/assets/svgs/Html'
+import Js from '@/assets/svgs/Js'
+import Mongodb from '@/assets/svgs/Mongodb'
+import Netlify from '@/assets/svgs/Netlify'
+import Nextjs from '@/assets/svgs/Nextjs'
+import Reactjs from '@/assets/svgs/Reactjs'
+import Sass from '@/assets/svgs/Sass'
+import Tailwindcss from '@/assets/svgs/Tailwindcss'
+import Typescript from '@/assets/svgs/Typescript'
+import Vitejs from '@/assets/svgs/Vitejs'
+import Vuejs from '@/assets/svgs/Vuejs'
+import Wordpress from '@/assets/svgs/Wordpress'
 import Image from 'next/image'
 import React from 'react'
 import StackIcon from 'tech-stack-icons'
 
 export const toolsData = [
-  // 🧱 בסיסי - Frontend Core
-  'html5',
-  'css3',
-  'sass',
-  'tailwindcss',
-
-  // 🧠 שפות תכנות
-  'js',
-  'typescript',
-
-  // ⚛️ ספריות ופריימוורקים
-  'reactjs',
-  'nextjs2',
-  'vuejs',
-  'vitejs',
-
-  // 🗃️ Backend / Database
-  'firebase',
-  'mongodb',
-  'wordpress',
-
-  // ☁️ Deployment & DevOps
-  'aws',
-  'cloudinary',
-  'netlify2',
-  'docker',
-
-  // ⚒️ Tools
-  'git',
-  'github',
-  'figma',
+  Html,
+  Css3,
+  Sass,
+  Tailwindcss,
+  Js,
+  Typescript,
+  Reactjs,
+  Nextjs,
+  Vuejs,
+  Vitejs,
+  Firebase,
+  Mongodb,
+  Wordpress,
+  Aws,
+  Cloudinary,
+  Netlify,
+  Docker,
+  Git,
+  Github,
+  Figma,
 ]
 
 const About = () => {
@@ -77,9 +86,9 @@ const About = () => {
           </ul>
           <h4 className="text-2xl my-6 text-gray-600">Tools I Use</h4>
           <ul className="flex flex-wrap md:max-w-[60%] gap-4 items-center mt-4">
-            {toolsData.map((tool, index) => (
-              <li key={index}>
-                <StackIcon name={tool} className="w-8 h-8 md:w-12 md:h-12" />
+            {toolsData.map((ToolIcon, index) => (
+              <li key={index} className="w-10 h-10 md:w-12 md:h-12">
+                <ToolIcon className="w-full h-full hover:-translate-y-1 duration-500" />
               </li>
             ))}
           </ul>
