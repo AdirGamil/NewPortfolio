@@ -21,7 +21,6 @@ import Vuejs from '@/assets/svgs/Vuejs'
 import Wordpress from '@/assets/svgs/Wordpress'
 import Image from 'next/image'
 import React from 'react'
-import StackIcon from 'tech-stack-icons'
 
 export const toolsData = [
   Html,
