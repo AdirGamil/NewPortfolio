@@ -1,6 +1,41 @@
 import { assets, infoList } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import StackIcon from 'tech-stack-icons'
+
+export const toolsData = [
+  // 🧱 בסיסי - Frontend Core
+  'html5',
+  'css3',
+  'sass',
+  'tailwindcss',
+
+  // 🧠 שפות תכנות
+  'js',
+  'typescript',
+
+  // ⚛️ ספריות ופריימוורקים
+  'reactjs',
+  'nextjs2',
+  'vuejs',
+  'vitejs',
+
+  // 🗃️ Backend / Database
+  'firebase',
+  'mongodb',
+  'wordpress',
+
+  // ☁️ Deployment & DevOps
+  'aws',
+  'cloudinary',
+  'netlify2',
+  'docker',
+
+  // ⚒️ Tools
+  'git',
+  'github',
+  'figma',
+]
 
 const About = () => {
   return (
@@ -16,28 +51,35 @@ const About = () => {
           />
         </div>
         <div className="flex-1">
-          <p className='mb-10 max-w-2xl'>
+          <p className="mb-10 max-w-2xl">
             I'm a front-end developer with a passion for creating engaging and
             user-friendly web experiences. I enjoy using modern web technologies
             like React, Next.js, and Tailwind CSS to build fast, scalable, and
             maintainable web applications. When I'm not coding, I enjoy playing
             video games, watching movies, and traveling to new places. I'm also
-            interested in learning about different cultures and trying new foods.
-            I'm always looking for new challenges and opportunities to grow as a
-            developer, so feel free to reach out to me if you have any projects or
-            ideas you'd like to discuss.
+            interested in learning about different cultures and trying new
+            foods. I'm always looking for new challenges and opportunities to
+            grow as a developer, so feel free to reach out to me if you have any
+            projects or ideas you'd like to discuss.
           </p>
 
-          <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <li className='border-[0.5px] border-gray-400 hover:bg-lightHover hover:-translate-y-1 duration-500 rounded-xl p-6 cursor-pointer' key={index}>
-                <Image
-                  src={icon}
-                  alt={title}
-                  className='w-7 mt-3'
-                  />
-                <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
-                <p className='text-gray-600 text-sm'>{description}</p>
+              <li
+                className="border-[0.5px] border-gray-400 hover:shadow-md hover:bg-[#F6F1FF] hover:-translate-y-1 duration-500 rounded-xl p-6 cursor-pointer"
+                key={index}
+              >
+                <Image src={icon} alt={title} className="w-7 mt-3" />
+                <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
+                <p className="text-gray-600 text-sm">{description}</p>
+              </li>
+            ))}
+          </ul>
+          <h4 className="text-2xl my-6 text-gray-600">Tools I Use</h4>
+          <ul className="flex flex-wrap md:max-w-[60%] gap-4 items-center mt-4">
+            {toolsData.map((tool, index) => (
+              <li key={index}>
+                <StackIcon name={tool} className="w-8 h-8 md:w-12 md:h-12" />
               </li>
             ))}
           </ul>
