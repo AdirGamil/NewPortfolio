@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const portfolio = [
   {
     id: 1,
@@ -29,7 +31,7 @@ const LatestWorks = () => {
             key={item.id}
             className="flex relative flex-col gap-3 items-center justify-center"
           >
-            <img
+            <Image
               src={item.image}
               alt={item.title}
               className="w-[335px] h-[335px] object-cover"

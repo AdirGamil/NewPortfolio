@@ -19,7 +19,7 @@ const Header = () => {
         </h3>
         <h1 className="text-5xl md:text-6xl">Fullstack / Frontend Developer</h1>
         <p className="max-w-2xl mx-auto">
-          I'm a front-end developer with a passion for creating engaging and
+          Im a front-end developer with a passion for creating engaging and
           user-friendly web experiences.
         </p>
         <div className='flex flex-col md:flex-row items-center gap-4 mt-4'>
