@@ -35,9 +35,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <button className="cursor-pointer">
-            <Image src={assets.moon_icon} alt="menu" className="w-6" />
-          </button>
+
           <a
             href="#contact"
             className="hidden lg:flex items-center gap-3 px-10 py-2 border rounded-full ml-4 border-gray-500"
