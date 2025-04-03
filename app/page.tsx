@@ -1,6 +1,7 @@
 'use client'
 
 import About from "./components/About"
+import Contactme from "./components/Contactme"
 import Header from "./components/Header"
 import LatestWorks from "./components/LatestWorks"
 
@@ -10,6 +11,7 @@ const Home = () => {
     <Header />
     <About />
     <LatestWorks />
+    <Contactme />
     </>
   )
 }

@@ -1,65 +1,10 @@
+import { portfolio } from '@/constants/contacts'
 import Image from 'next/image'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 
-const portfolio = [
-  {
-    id: 1,
-    title: 'Worksapce Landing',
-    image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
-    description: 'StarterKit',
-    liveLink: 'https://project1.com',
-  },
-  {
-    id: 1,
-    title: 'Worksapce Landing',
-    image:
-      'https://res.cloudinary.com/drejchdwh/image/upload/v1742561995/8e14459fb3fdde9b3e0eff279161e77d.webp',
-    description: 'Frontend development',
-    githubLink: 'https://github.com/username/project1',
-    liveLink: 'https://project1.com',
-  },
-  {
-    id: 1,
-    title: 'Worksapce Landing',
-    image:
-      'https://res.cloudinary.com/drejchdwh/image/upload/v1742561995/8e14459fb3fdde9b3e0eff279161e77d.webp',
-    description: 'Mern Stack',
-    githubLink: 'https://github.com/username/project1',
-    liveLink: 'https://project1.com',
-  },
-  {
-    id: 1,
-    title: 'Worksapce Landing',
-    image:
-      'https://res.cloudinary.com/drejchdwh/image/upload/v1742561995/8e14459fb3fdde9b3e0eff279161e77d.webp',
-    description: 'StarterKit',
-    githubLink: 'https://github.com/username/project1',
-    liveLink: 'https://project1.com',
-  },
-  {
-    id: 1,
-    title: 'Worksapce Landing',
-    image:
-      'https://res.cloudinary.com/drejchdwh/image/upload/v1742561995/8e14459fb3fdde9b3e0eff279161e77d.webp',
-    description: 'Frontend development',
-    githubLink: 'https://github.com/username/project1',
-    liveLink: 'https://project1.com',
-  },
-  {
-    id: 1,
-    title: 'Worksapce Landing',
-    image:
-      'https://res.cloudinary.com/drejchdwh/image/upload/v1742561995/8e14459fb3fdde9b3e0eff279161e77d.webp',
-    description: 'Mern Stack',
-    githubLink: 'https://github.com/username/project1',
-    liveLink: 'https://project1.com',
-  },
-]
-
 const LatestWorks = () => {
   return (
-    <div className="h-screen">
+    <div id="work">
       <div className="flex flex-col gap-3 items-center justify-center">
         <h5 className="text-2xl">My portfolio</h5>
         <h1 className="text-6xl">My Latest Works</h1>

@@ -5,7 +5,7 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-      <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col justify-center items-center gap-4'>
+      <div id='top' className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col justify-center items-center gap-4'>
         <div>
           <Image
             src={assets.profile_img}
@@ -31,7 +31,7 @@ const Header = () => {
             <Image src={assets.right_arrow_white} alt="" className=" w-4" />
           </a>
           <a
-            href="/adir_gamil_resume.pdf"
+            href="/Adir-Resume.pdf"
             download={true}
             className="px-10 hover:scale-110 transition-all duration-200 py-3 border rounded-full border-gray-500 flex items-center gap-2"
           >
