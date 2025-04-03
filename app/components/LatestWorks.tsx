@@ -18,7 +18,7 @@ const LatestWorks = () => {
     <div id="work" className='min-h-screen'>
       <div className="flex flex-col gap-3 items-center justify-center">
         <h5 className="text-2xl">My portfolio</h5>
-        <h1 className="text-6xl">My Latest Works</h1>
+        <h1 className="text-6xl text-center">My Latest Works</h1>
         <p className="mt-4 text-lg max-w-[70%] text-center">
           Welcome to my web development portfolio! Explore a collection of
           projects showcasing my expertise in front-end development.

@@ -1,4 +1,7 @@
+// RootLayout.tsx
+
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Top from './components/Top'
@@ -17,11 +20,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar />
-      <body className="scroll-smooth">{children}</body>
-      <Toaster position="top-center" />
-      <Top />
-      <Footer />
+      <head>
+        {/* ✅ הוספת הסקריפט כאן */}
+        <Script
+          src="https://cdn.enable.co.il/licenses/enable-L24245psuckyng21-0124-55089/init.js"
+          strategy="afterInteractive"
+        />
+      </head>
+
+      <body className="scroll-smooth">
+        <Navbar />
+        {children}
+        <Toaster position="top-center" />
+        <Top />
+        <Footer />
+      </body>
     </html>
   )
 }
