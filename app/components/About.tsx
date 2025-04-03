@@ -71,7 +71,7 @@ const About = () => {
             projects or ideas youd like to discuss.
           </p>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          {/* <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, title, description }, index) => (
               <li
                 className="border-[0.5px] border-gray-400 hover:shadow-md hover:bg-[#F6F1FF] hover:-translate-y-1 duration-500 rounded-xl p-6 cursor-pointer"
@@ -82,9 +82,9 @@ const About = () => {
                 <p className="text-gray-600 text-sm">{description}</p>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <h4 className="text-2xl my-6 text-gray-600">Tools I Use</h4>
-          <ul className="flex flex-wrap md:max-w-[60%] gap-4 items-center mt-4">
+          <ul className="flex flex-wrap xl:max-w-[60%] gap-4 items-center mt-4">
             {toolsData.map((ToolIcon, index) => (
               <li key={index} className="w-10 h-10 md:w-12 md:h-12">
                 <ToolIcon className="w-full h-full hover:-translate-y-1 duration-500" />
