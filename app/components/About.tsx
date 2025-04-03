@@ -19,6 +19,8 @@ import Typescript from '@/assets/svgs/Typescript'
 import Vitejs from '@/assets/svgs/Vitejs'
 import Vuejs from '@/assets/svgs/Vuejs'
 import Wordpress from '@/assets/svgs/Wordpress'
+import Redux from '@/assets/svgs/Redux'
+import Node from '@/assets/svgs/Node'
 import Image from 'next/image'
 import React from 'react'
 
@@ -40,6 +42,8 @@ export const toolsData = [
   Cloudinary,
   Netlify,
   Docker,
+  Redux,
+  Node,
   Git,
   Github,
   Figma,
@@ -47,7 +51,7 @@ export const toolsData = [
 
 const About = () => {
   return (
-    <div id='about' className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id='about' className="w-full px-[12%] min-h-screen py-10 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg">Introduction</h4>
       <h2 className="text-5xl text-center">About me</h2>
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">

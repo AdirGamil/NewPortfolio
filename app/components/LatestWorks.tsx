@@ -1,10 +1,21 @@
 import { portfolio } from '@/constants/contacts'
+import { getTechIcon } from '@/constants/getTechIcon'
 import Image from 'next/image'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 
+export type PortfolioItem = {
+  id: number
+  title: string
+  image: string
+  description: string
+  stack: string[]
+  githubLink?: string
+  liveLink: string
+}
+
 const LatestWorks = () => {
   return (
-    <div id="work">
+    <div id="work" className='min-h-screen'>
       <div className="flex flex-col gap-3 items-center justify-center">
         <h5 className="text-2xl">My portfolio</h5>
         <h1 className="text-6xl">My Latest Works</h1>
@@ -29,14 +40,20 @@ const LatestWorks = () => {
               />
 
               {/* שכבת מידע בתחתית */}
-              <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-[90%] max-w-[270px] rounded-lg border border-black bg-white px-4 py-3 flex items-center justify-between shadow-md">
+              <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-[90%] rounded-lg border border-black bg-white px-4 py-3 flex items-center justify-between shadow-md">
                 <div className="flex-1">
                   <h3 className="text-base font-semibold text-gray-800 truncate">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-600 line-clamp-2">
-                    {item.description}
-                  </p>
+                  <div className="flex flex-wrap gap-1 mt-2 items-center">
+                    {item.stack?.map((tech) => (
+                      <span key={tech} title={tech}>
+                        {getTechIcon(tech) ?? (
+                          <span className="text-xs  text-gray-500">{tech}</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 <div className="flex gap-1">
