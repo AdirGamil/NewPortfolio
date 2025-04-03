@@ -1,4 +1,4 @@
-import { assets, infoList } from '@/assets/assets'
+import { assets } from '@/assets/assets'
 import Aws from '@/assets/svgs/Aws'
 import Cloudinary from '@/assets/svgs/Cloudinary'
 import Css3 from '@/assets/svgs/Css3'
