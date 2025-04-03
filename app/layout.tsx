@@ -1,6 +1,6 @@
 // RootLayout.tsx
 
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import './globals.css'
 import Navbar from './components/Navbar'
@@ -40,6 +40,11 @@ export const metadata: Metadata = {
       'https://res.cloudinary.com/drejchdwh/image/upload/v1743682504/%D7%A6%D7%99%D7%9C%D7%95%D7%9D_%D7%9E%D7%A1%D7%9A_2025-04-03_151434_meo03n.png',
     ],
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
+  colorScheme: 'light dark',
 }
 
 export default function RootLayout({
