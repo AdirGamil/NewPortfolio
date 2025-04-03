@@ -29,7 +29,7 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 shadow-md bg-white bg-opacity-50 rounded-full px-12 py-3">
           {navbarLinks.map((link) => (
             <li key={link.id}>
-              <a href={link.href}>{link.label}</a>
+              <a href={link.href} className="nav__link">{link.label}</a>
             </li>
           ))}
         </ul>
@@ -38,7 +38,7 @@ const Navbar = () => {
 
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2 border rounded-full ml-4 border-gray-500"
+            className="hidden lg:flex items-center gap-3 px-10 py-2 border rounded-full ml-4 border-gray-500 hover:bg-black hover:text-white transition-all duration-200"
           >
             Contact
             <Image src={assets.arrow_icon} alt="arrow" className="w-3" />
