@@ -6,7 +6,7 @@ const portfolio = [
     id: 1,
     title: 'Worksapce Landing',
     image:
-      'https://res.cloudinary.com/drejchdwh/image/upload/v1742561995/8e14459fb3fdde9b3e0eff279161e77d.webp',
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
     description: 'StarterKit',
     liveLink: 'https://project1.com',
   },
@@ -73,7 +73,7 @@ const LatestWorks = () => {
           {portfolio.map((item) => (
             <div
               key={item.id}
-              className="relative w-[90%] max-w-[335px] h-[335px] mx-auto"
+              className="relative w-[90%] max-w-[335px] h-[335px] mx-auto border border-gray-400 rounded-lg overflow-hidden"
             >
               {/* תמונה מלאה */}
               <Image
@@ -95,21 +95,28 @@ const LatestWorks = () => {
                 </div>
 
                 <div className="flex gap-1">
-
                   {item.githubLink && (
-                    <button
+                    <a
+                      href={item.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-8 h-8 flex items-center justify-center bg-[#D8FC68] border border-gray-400 rounded-full transition hover:bg-[#c6eb59] hover:-translate-y-1"
-                      aria-label="Open"
+                      title="Github"
+                      aria-label="Open Github"
                     >
                       <FiGithub className="text-xl" />
-                    </button>
+                    </a>
                   )}
-                  <button
+                  <a
+                    href={item.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-8 h-8 flex items-center justify-center bg-[#D8FC68] border border-gray-400 rounded-full transition hover:bg-[#c6eb59] hover:-translate-y-1"
-                    aria-label="Open"
+                    title="Live Preview"
+                    aria-label="Open Live Preview"
                   >
                     <FiExternalLink className="text-xl" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
