@@ -22,7 +22,7 @@ const Header = () => {
           <Image src={assets.hand_icon} alt="profile" className=" w-6" />
         </h3>
         <h1 className="text-5xl md:text-6xl h-[120px]">
-          I'm a{' '}
+          I&apos;m a{' '}
           <TypeAnimation
             sequence={[
               'Full Stack Developer',
