@@ -7,24 +7,6 @@ export const navbarLinks = [
 
 export const portfolio = [
   {
-    id: 1,
-    title: 'StayFlex (Airbnb clone)',
-    image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
-    stack: [
-      'React',
-      'Redux',
-      'SASS',
-      'Node.js',
-      'MongoDB',
-      'JavaScript',
-      'HTML',
-    ],
-    description: 'Airbnb clone built with React, Redux, Node.js & MongoDB',
-    liveLink: 'https://stayflex.onrender.com/',
-    githubLink: 'https://github.com/AdirGamil/StayFlex-frontend',
-  },
-  {
     id: 2,
     title: 'AniZone Mern Project',
     image:
@@ -43,6 +25,24 @@ export const portfolio = [
       'MERN-based anime social platform with blogs, watchlists & reviews',
     liveLink: 'https://anizone.co.il/',
     githubLink: '',
+  },
+  {
+    id: 1,
+    title: 'StayFlex Mern Project',
+    image:
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
+    stack: [
+      'React',
+      'Redux',
+      'SASS',
+      'Node.js',
+      'MongoDB',
+      'JavaScript',
+      'HTML',
+    ],
+    description: 'Airbnb clone built with React, Redux, Node.js & MongoDB',
+    liveLink: 'https://stayflex.onrender.com/',
+    githubLink: 'https://github.com/AdirGamil/StayFlex-frontend',
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ export const portfolio = [
   },
   {
     id: 8,
-    title: 'React-SASS-Starter',
+    title: 'React & SASS Kit',
     image:
       'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725278379/%D7%A6%D7%99%D7%9C%D7%95%D7%9D_%D7%9E%D7%A1%D7%9A_2024-09-02_145922_moquxk.png',
     stack: ['React', 'SASS', 'JavaScript', 'HTML', 'Vite'],
@@ -108,7 +108,7 @@ export const portfolio = [
   },
   {
     id: 9,
-    title: 'React-TailwindCSS-Starter',
+    title: 'React & TailwindCSS Kit',
     image:
       'https://res.cloudinary.com/dhweqnxgd/image/upload/v1730799289/starttttttt_uovuk6.png',
     stack: ['React', 'TailwindCSS', 'JavaScript', 'HTML', 'Vite'],
