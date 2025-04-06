@@ -56,10 +56,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* ✅ הוספת הסקריפט כאן */}
-        <Script
+        {/* <Script
           src="https://cdn.enable.co.il/licenses/enable-L24245psuckyng21-0124-55089/init.js"
           strategy="afterInteractive"
-        />
+        /> */}
       </head>
 
       <body className="scroll-smooth">
