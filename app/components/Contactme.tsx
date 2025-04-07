@@ -9,7 +9,7 @@ const Contactme = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-  
+
     toast.promise(
       new Promise((resolve) => {
         setTimeout(() => {
@@ -35,11 +35,10 @@ const Contactme = () => {
         },
       }
     )
-  
+
     // Reset form fields
     if (form.current) form.current.reset()
   }
-  
 
   return (
     <section
@@ -51,8 +50,12 @@ const Contactme = () => {
           Contact Us
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-400 text-base sm:text-lg mb-10">
-          For further questions, including partnership opportunities, please email{' '}
-          <a href="mailto:2000adir2000@gmail.com" className="text-blue-600 underline">
+          For further questions, including partnership opportunities, please
+          email{' '}
+          <a
+            href="mailto:2000adir2000@gmail.com"
+            className="text-blue-600 underline"
+          >
             2000adir2000@gmail.com
           </a>{' '}
           or use the form below.
