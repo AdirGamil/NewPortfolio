@@ -9,36 +9,18 @@ const Contactme = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (!form.current) return
-
-    const formEl = form.current
-
-    const sendEmail = async () => {
-      // שליחה למנהל
-      await emailjs.sendForm(
-        'service_mb61err',
-        'template_lga172h',
-        formEl,
-        { publicKey: 'esvGMYbotveSY1oH_' }
-      )
-
-      // שליחה ללקוח
-      await emailjs.sendForm(
-        'service_mb61err',
-        'template_co5b9zt',
-        formEl,
-        { publicKey: 'esvGMYbotveSY1oH_' }
-      )
-
-      formEl.reset()
-    }
-
+  
     toast.promise(
-      sendEmail(),
+      new Promise((resolve) => {
+        setTimeout(() => {
+          resolve('done')
+        }, 1500)
+      }),
       {
         loading: 'Sending message...',
-        success: 'Message sent and confirmation email delivered!',
-        error: 'Failed to send. Please try again.',
+        success:
+          'This is a demo. No message was sent. You can reach me directly at adirg.dev ✉️',
+        error: 'Oops! Something went wrong.',
       },
       {
         style: {
@@ -46,14 +28,18 @@ const Contactme = () => {
           color: '#000',
         },
         success: {
-          duration: 5000,
+          duration: 6000,
         },
         error: {
           duration: 5000,
         },
       }
     )
+  
+    // Reset form fields
+    if (form.current) form.current.reset()
   }
+  
 
   return (
     <section
